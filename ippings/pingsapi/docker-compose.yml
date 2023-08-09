@@ -1,0 +1,13 @@
+version: "2"
+services: 
+  db: 
+    image: mysql:8
+    environment: 
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports: 
+    - "3306:3306"
+  broker:
+    image: redis
+    ports:
+    - "6379:6379"
+      
